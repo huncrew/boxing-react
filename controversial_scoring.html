@@ -1,0 +1,106 @@
+
+<!--SAME PRINCIPLE OF STATIC DATA, THIS PAGE JUST SIMPLY SHOWS A SINGLE HARD CODED FIGHT, IN THE NEAR FUTURE IT SHOULD
+DISPLAY THE FIGHT THAT WAS CLICKED FROM THE HOME PAGE, PULLING THE DATA FROM DB-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vote on Boxing</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<main class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Boxcon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+               <a class="nav-link" href="controversial_scoring.html">Vote For A Fight</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="favourite_fighters.html">Choose Your Favourite Fighters</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="saved_favourites.html">View your favourites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_form.html">Contact Form</a>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img style="width: 25px;" src="//www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=60&amp;d=identicon&amp;r=PG"/><b class="caret"></b></a>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">Logout</a></li>
+                  </ul>
+              </div>
+              <a href="">
+              <button type="button" class="btn btn-dark">Login</button>
+              </a>
+               <li></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<main>
+
+<h1>Fight: Benn vs Eubank 2</h1>
+<div class="row row-cols-1 row-cols-md-5 g-2">
+  <div class="col">
+   <a class="text-danger" href="">
+    <div class="card h-100">
+      <img src="images/eubank-benn-2.jpeg" class="card-img-top" alt="Fighter">
+      <div class="card-body">
+        <h5 class="card-title">Eubank vs Benn</h5>
+      </div>
+    </div>
+    </a>
+  </div>
+</div>
+<div class="col spaced">
+    <h4>Vote on the winner</h4>
+    <form action="" method="post">
+    <fieldset>
+            <input type="radio" name="choice"  value="">
+            <label for="">Benn</label><br>
+            <input type="radio" name="choice"  value="">
+            <label for="">Eubank</label><br>
+    </fieldset>
+    <input type="submit" value="Vote">
+    </form>
+</div>
+<div class="col spaced">
+  <h2>Leave comments</h2>
+  <textarea id="comment" rows="4" cols="50" name="comment" form="usrform">
+    Enter text here...</textarea>
+  <form action="" id="commentForm"method="">
+  <input onclick="addItem();return false;" type="submit" id="addBtn" value="Submit">
+  </form>
+</div>
+<div class="col spaced">
+  <h2>Your Comments</h2>
+  <ul id="yourComments">
+
+  </ul>
+</div>
+<a href="www.reddit.com">Search 'Boxing' on reddit via this link for more discussion on the fight</a>
+<script src="js/code.js"></script>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

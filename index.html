@@ -1,0 +1,197 @@
+
+<!--BOXING HOME PAGE, HERE THE NAV BAR LINKS TO FAVOURITE FIGHTERS, AND CONTROVERSIAL SCORING
+LINKS CURRENTLY DONT WORK, AND THE PAGES ARE TYPED STATICALLY, EACH INDIVIDUAL FIGHT INFORMATION IS HARD-CODED,
+WHEN THIS IS WRITTEN DYNAMICALLY, EACH FIGHT WILL LINK TO A GENERAL FIGHT PAGE TO SHOW THE FIGHTERS INFORMATION-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vote on Boxing</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<main class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Boxcon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+               <a class="nav-link" href="controversial_scoring.html">Vote For A Fight</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="favourite_fighters.html">Choose Your Favourite Fighters</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="saved_favourites.html">View your favourites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_form.html">Contact Form</a>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img style="width: 25px;" src="//www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=60&amp;d=identicon&amp;r=PG"/><b class="caret"></b></a>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">Logout</a></li>
+                  </ul>
+              </div>
+              <a href="">
+              <button type="button" class="btn btn-dark">Login</button>
+              </a>
+               <li></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <h1 class="head_title mt-3 mb-4">Vote on boxings controversial scoring</h1>
+
+  <div class="row row-cols-1 row-cols-md-5 g-2">
+    <div class="col">
+     <a class="text-danger" href="">
+      <div class="card h-100">
+        <img src="images/catterall-taylor.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Taylor vs Catteral</h5>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col">
+        <a class="text-danger" href="">
+         <div class="card h-100">
+           <img src="images/hagler-leonard.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Hagler vs Leonard</h5>
+           </div>
+         </div>
+         </a>
+       </div>
+       <div class="col">
+        <a class="text-danger" href="">
+         <div class="card h-100">
+           <img src="images/eubank-benn-2.jpeg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Benn vs Eubank 2</h5>
+           </div>
+         </div>
+         </a>
+       </div>
+  </div>
+
+  
+  <h1 class="head_title mt-3 mb-4">Some Potential superfights</h1>
+  <div id="potentialWrapper">
+  <div class="row row-cols-1 row-cols-md-5 g-2">
+    <div class="col">
+     <a class="text-danger" href="">
+      <div class="card h-100">
+        <img src="images/tyson-fury_6J1956T.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fury vs Joshua</h5>
+          <button onclick="return false;" id="like1" >Like<span id="spanLike1"></span></button>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col">
+      <a class="text-danger" href="">
+       <div class="card h-100">
+         <img src="images/errol-spencejr.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">Spence vs Crawford</h5>
+           <button onclick="return false;" id="like2" >Like<span id="spanLike2"></span></button>
+         </div>
+       </div>
+       </a>
+    </div>
+    <div class="col">
+     <a class="text-danger" href="">
+      <div class="card h-100">
+        <img src="images/oleksandr-usyk.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Usyk vs Fury</h5>
+          <button onclick="return false;" id="like3" >Like <span id="spanLike3"></span></button>
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+  </div>
+      <div class="row">
+          <div class="col-12">
+            <h3 class="head_title mt-3 mb-4">Fighter Profiles</h3>
+            <p>More information found at: <a href="www.boxrec.com">www.boxrec.com</a></p>
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Weight</th>
+                  <th>Record</th>
+                </tr>
+                <tr>
+                  <td>Tyson Fury</td>
+                  <td>34</td>
+                  <td>110kg</td>
+                  <td>35-1-0</td>
+                </tr>
+                <tr>
+                  <td>Nigel Benn</td>
+                  <td>56</td>
+                  <td>75kg</td>
+                  <td>45-1-5</td>
+                </tr>
+                <tr>
+                  <td>Chris Eubank</td>
+                  <td>55</td>
+                  <td>78kg</td>
+                  <td>51-1-3</td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="head_title mt-3 mb-4">Best fighters of the 90s</h3>
+            <ul>
+                <li id="james">James Toney</li>
+                <li>Julian Jackson</li>
+                <li>Lennox Lewis</li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <h3 class="head_title mt-3 mb-4">Famous quotes</h3>
+          <div style="position: relative; width: 50%;" class="container">
+            <img src="images/chris_eubank_sr.png" alt="chris" style="width:100%;">
+            <div class="text-block">
+              <q>fighting is a mugs game</q>
+            </div>
+          </div>
+          <div style="position: relative; width: 50%;" class="container">
+            <img src="images/benn.jpg" alt="chris" style="width:100%;">
+            <div class="text-block">
+              <q>I hate him, I genuinely hate him</q>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/code.js"></script>
+    </main>
+<footer>
+
+</footer>
+</body>
+</html>

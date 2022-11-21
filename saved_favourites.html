@@ -1,0 +1,75 @@
+
+<!--PAGE IS STATIC SO THE BUTTONS TO ADD NEW FIGHTERS DO NOT WORK, THE PLAN IS TO DRAW THE DATA FROM A DATABASE, REMEMBER THE
+USER, AND DISPLAY THEIR FAVOURITE FIGHTERS - LOGIN ON NAVBAR ALSO DOESNT WORK-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vote on Boxing</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<main class="container">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Boxcon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+           <a class="nav-link" href="controversial_scoring.html">Vote For A Fight</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="favourite_fighters.html">Choose Your Favourite Fighters</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="saved_favourites.html">View your favourites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_form.html">Contact Form</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img style="width: 25px;" src="//www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=60&amp;d=identicon&amp;r=PG"/><b class="caret"></b></a>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Logout</a></li>
+              </ul>
+          </div>
+          <a href="">
+          <button type="button" class="btn btn-dark">Login</button>
+          </a>
+           <li></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <a href=""><h1>Your saved favourite boxers</h1></a>
+  <h4>View your saved favourites here</h4>
+  
+  <div class="row row-cols-1 row-cols-md-5 g-2">
+    <div class="col">
+        <ul id="itemList">
+
+        </ul>
+    </div>
+  </div>
+  <script src="js/code.js"></script>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
